@@ -1,6 +1,6 @@
 import { getCakeByName, insertCake } from "../repositories/cakes.repositories.js";
 
-export async function postCake(req, res) {
+export async function createCake(req, res) {
   const { name, image, price, description } = req.body;
 
   try {
