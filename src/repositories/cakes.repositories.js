@@ -1,6 +1,6 @@
 import { db } from "../database/database.connection.js";
 
-export function getCakeByName(name) {
+export async function getCakeByName(name) {
   return db.query(`SELECT * FROM cakes WHERE name = $1;`, [name]);
 }
 
